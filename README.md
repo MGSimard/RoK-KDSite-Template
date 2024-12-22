@@ -1,11 +1,14 @@
 <details>
 <summary><h2>Task List</h2></summary>
 
-- [ ] Initial scaffolding of technologies (React, Vite, Router, Latest upgrades, etc.).
-- [ ] Initial Push to Github Repo.
-- [ ] Create core routes (Home, KVK#, Information, Migration, NotFound).
-- [ ] Task
-- [ ] Task
+- [x] Initial scaffolding of technologies (React, Vite, Router, Latest upgrades, etc.).
+- [x] Initial Push to Github Repo.
+- [x] Create core routes (Home, KVK#, Information, Migration, NotFound).
+- [ ] Home Page
+- [ ] Information Page
+- [ ] Migration Page
+- [ ] Not Found Page
+- [ ] KVK Page
 - [ ] Deploy.
 
 </details>
