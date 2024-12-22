@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+/* :root[data-theme="dark"] {
+}
+:root[data-theme="light"] {
+} */
+:root {
+  --clr-primary: #000;
+  --clr-secondary: #000;
+  --clr-text: white;
+  --clr-bg: #000;
+}
+html {
+  font-size: 62.5%;
+  color: var(--clr-text);
+}
+body {
+  font-size: 1.6rem;
+  background-color: var(--clr-bg);
+}
+/* UNSET */
+img {
+  display: block;
+  max-width: 100%;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/**/
