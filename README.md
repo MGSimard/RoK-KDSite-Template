@@ -59,14 +59,12 @@ Lighweight React/Vite Template.
 
 </details>
 
-<details>
-
 ### Built With
 
-- [React 19.0.0]()
-- [Vite SWC 6.0.5]()
-- [TanStack Router 1.91.1]()
-- [TypeScript 5.7.2]()
+- [React 19.0.0](https://react.dev/)
+- [Vite SWC 6.0.5](https://vite.dev/)
+- [TanStack Router 1.91.1](https://tanstack.com/router/latest)
+- [TypeScript 5.7.2](https://www.typescriptlang.org/)
 
 ## Usage
 
