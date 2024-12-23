@@ -1,4 +1,5 @@
 import { createLazyFileRoute } from "@tanstack/react-router";
+import { Section } from "../components/Section";
 
 export const Route = createLazyFileRoute("/migration")({
   component: RouteMigration,
@@ -14,11 +15,9 @@ function RouteMigration() {
         </div>
       </header>
       <main>
-        <section>
-          <div className="section-content">
-            <h2>Migration page main content area.</h2>
-          </div>
-        </section>
+        <Section>
+          <h2>Migration page main content area.</h2>
+        </Section>
       </main>
     </>
   );

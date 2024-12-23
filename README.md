@@ -11,6 +11,7 @@
 - [ ] Migration Page
 - [ ] Not Found Page
 - [ ] KVK Page
+- [ ] Footer design
 - [ ] Nav submenu expansion aria
 - [ ] Nav mobile responsive
 - [ ] Deploy.

@@ -1,0 +1,31 @@
+[
+  {
+    "q": "Are KvK statistics automatically recorded?",
+    "a": "Yes, we build formulas and scripts to automate the rank calculation. Each time you submit new data trough form submission, the formulas and scripts will be triggered to recalculate your data immediately. When the calculation done, your new data will be compared and ranked accordingly within the lists."
+  },
+  {
+    "q": "Is there any admin interface to sort ranking?",
+    "a": "In order to save time through automation and minimize the possibility of errors, no."
+  },
+  {
+    "q": "What purpose do admins serve?",
+    "a": "Admins work to check and validate your data in order to make sure your data is accurate by referring to your provided screenshots. They also troubleshoot any potential miscalculations by the automated process."
+  },
+  { "q": "How quickly are ranks adjusted upon submitting new data?", "a": "Virtually instantly." },
+  {
+    "q": "How is scoring calculated?",
+    "a": "- Pre-KVK\n- T4 Kills\n- T5 Kills\n- Deaths\n- Honor\n- Enemy Kills\n- Relentless Dead"
+  },
+  {
+    "q": "Special weighting",
+    "a": "There is special weighting decided by the Kingdom Council for important stats during specific time frames. The key stats with special weighting are:\n- T5 Kills: x3\n- Deaths: x10\nThese two stats will be multiplied as decided by Council at the beginning of KVK while other stats have no multipliers."
+  },
+  {
+    "q": "What is Specific Time Frame?",
+    "a": "Specific Time Frames are periods where main conflicts happen during KVK. There are three stats collected during Specific Time Frames; they are T4 Kills, T5 Kills, and Deaths. Specific Time Frame has beginning time and ending time:\n- Beginning Time: The starting time where T4 Kills, T5 Kills and Deaths data registration is done. Usually around one or two days before conflict begins.\nEnding Time: Ending time normally after the final conflict. Once the final conflict ends, data submission for T4 Kills, T5 Kills, and Deaths data is closed.\nEnding time data is then subtracted from Beginning Time data to compare each individual's performance during war time."
+  },
+  {
+    "q": "What about other stats which aren't multiplied?",
+    "a": "Other stats are also important. Pre-KVK and Honor points will be used as an indicator of contribution outside of war time. Both stats contribute to the Kingdom acquiring better buffs and rewards during KVK. Enemy Kills and Relentless Dead stats are additional war stats used as validators for Specific Time Frame stats."
+  }
+]

@@ -1,6 +1,7 @@
 {
-  "kvk1": { "title": "Season one", "dataUrl": "" },
-  "kvk2": { "title": "Season Two", "dataUrl": "" },
-  "kvk3": { "title": "Season Three", "dataUrl": "" },
-  "kvk4": { "title": "Season of Conquest", "dataUrl": "" }
+  "kvk5": { "title": "Season of Ahmet", "dataUrl": "", "formPrekvk": "", "formPostkvk": "", "formHonor": "" },
+  "kvk4": { "title": "Season of Conquest", "dataUrl": "", "formPrekvk": "", "formPostkvk": "", "formHonor": "" },
+  "kvk3": { "title": "Season Three", "dataUrl": "", "formPrekvk": "", "formPostkvk": "", "formHonor": "" },
+  "kvk2": { "title": "Season Two", "dataUrl": "", "formPrekvk": "", "formPostkvk": "", "formHonor": "" },
+  "kvk1": { "title": "Season one", "dataUrl": "", "formPrekvk": "", "formPostkvk": "", "formHonor": "" }
 }

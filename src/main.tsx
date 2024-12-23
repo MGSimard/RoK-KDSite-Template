@@ -5,8 +5,8 @@ import { RouterProvider, createRouter } from "@tanstack/react-router";
 // Import the generated route tree
 import { routeTree } from "./routeTree.gen";
 
-import "@/styles/core.css";
-import "@/styles/fonts/fonts.css";
+import "./styles/core.css";
+import "./styles/fonts/fonts.css";
 
 // Create a new router instance
 const router = createRouter({ routeTree });

@@ -1,7 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
-import kvks from "../../data/kvkdata.json";
+import { Section } from "../../components/Section";
 import { FormLink } from "../../components/FormLink";
 import { KvkTable } from "../../components/KvkTable";
+import kvks from "../../data/kvkdata.json";
 
 /* Fetch KVK Data - TODO: Leaf render block, get actual data */
 
@@ -32,29 +33,25 @@ function RouteKVK() {
         </div>
       </header>
       <main>
-        <section className="section-light">
-          <div className="section-content center">
-            <div>
-              <h2>Form Submissions</h2>
-              <p className="flavor">Fill each form at the appropriate time prior to the deadline.</p>
-            </div>
-            <div className="form-links">
-              <FormLink title="Pre-KvK" />
-              <FormLink title="Post-KvK" />
-              <FormLink title="Honor" />
-            </div>
+        <Section classes="section-light center">
+          <div>
+            <h2>Form Submissions</h2>
+            <p className="flavor">Fill each form at the appropriate time prior to the deadline.</p>
           </div>
-        </section>
-        <section>
-          <div className="section-content center">
-            <div>
-              <h2>Rankings</h2>
-              <p className="flavor">List of top KVK contributors.</p>
-              <hr className="divider" />
-            </div>
-            <KvkTable />
+          <div className="form-links">
+            <FormLink title="Pre-KvK" />
+            <FormLink title="Post-KvK" />
+            <FormLink title="Honor" />
           </div>
-        </section>
+        </Section>
+        <Section classes="center">
+          <div>
+            <h2>Rankings</h2>
+            <p className="flavor">List of top KVK contributors.</p>
+            <hr className="divider" />
+          </div>
+          <KvkTable />
+        </Section>
       </main>
     </>
   );
