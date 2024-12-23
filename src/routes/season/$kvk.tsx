@@ -24,7 +24,7 @@ function RouteKVK() {
     <>
       <header>
         <div className="header-content">
-          <h1>KvK1</h1>
+          <h1>{kvk}</h1>
           <hr />
           <span className="h1-sub">{kvkData.title}</span>
         </div>

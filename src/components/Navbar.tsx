@@ -17,7 +17,7 @@ export function Navbar() {
             <ul aria-labelledby="nav-submenu01">
               {Object.entries(kvks).map(([key, _], i) => (
                 <li key={`${i}-${key}`}>
-                  <Link to="/season/$kvk" params={{ kvk: key.toLowerCase() }}>
+                  <Link to="/season/$kvk" params={{ kvk: key }}>
                     {key}
                   </Link>
                 </li>
