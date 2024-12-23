@@ -9,13 +9,14 @@ function RouteMigration() {
     <>
       <header>
         <div className="header-content">
-          <h1>MIGRATION PAGE HEADER</h1>
+          <h1>Migration</h1>
+          <hr />
         </div>
       </header>
       <main>
         <section>
           <div className="section-content">
-            <h2>MIGRATION PAGE MAIN CONTENT AREA</h2>
+            <h2>Migration page main content area.</h2>
           </div>
         </section>
       </main>

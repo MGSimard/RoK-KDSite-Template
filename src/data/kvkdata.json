@@ -1,5 +1,6 @@
-[
-  { "name": "kvk1", "dataUrl": "" },
-  { "name": "kvk2", "dataUrl": "" },
-  { "name": "kvk3", "dataUrl": "" }
-]
+{
+  "kvk1": { "title": "Season one", "dataUrl": "" },
+  "kvk2": { "title": "Season Two", "dataUrl": "" },
+  "kvk3": { "title": "Season Three", "dataUrl": "" },
+  "kvk4": { "title": "Season of Conquest", "dataUrl": "" }
+}

@@ -6,7 +6,7 @@ export const Route = createFileRoute("/")({
 });
 
 function RouteHome() {
-  console.log(kvks);
+  const latestKvk = Object.keys(kvks).pop();
 
   return (
     <>
@@ -18,7 +18,9 @@ function RouteHome() {
         </h1>
         <p>Home of the greatest warriors in Rise of Kingdoms</p>
         <div className="hero-links">
-          <Link className="btn btn-primary">CURRENT SEASON</Link>
+          <Link to={`/season/${latestKvk}`} className="btn btn-primary">
+            CURRENT SEASON
+          </Link>
           <Link to="/migration" className="btn btn-secondary">
             MIGRATION
           </Link>

@@ -9,13 +9,14 @@ function RouteInformation() {
     <>
       <header>
         <div className="header-content">
-          <h1>INFORMATION PAGE HEADER</h1>
+          <h1>Information</h1>
+          <hr />
         </div>
       </header>
       <main>
         <section>
           <div className="section-content">
-            <h2>INFORMATION PAGE MAIN CONTENT AREA</h2>
+            <h2>Information page main content area.</h2>
           </div>
         </section>
       </main>
