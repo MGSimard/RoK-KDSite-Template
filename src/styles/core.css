@@ -110,10 +110,6 @@ nav {
 .nav-dropdown > a {
   cursor: default;
 }
-.nav-dropdown:hover > a,
-.nav-dropdown:focus-within > a {
-  color: var(--clrPrimary);
-}
 .nav-dropdown ul {
   visibility: hidden;
   position: absolute;
@@ -145,8 +141,9 @@ nav {
   display: block;
   width: 100%;
 }
-.nav-dropdown:hover > ul,
-.nav-dropdown:focus-within > ul {
+.nav-dropdown a:hover ~ ul,
+.nav-dropdown a:focus-visible ~ ul,
+.nav-dropdown ul:has(a:focus-visible) {
   visibility: visible;
   opacity: 1;
 }
