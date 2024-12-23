@@ -141,7 +141,7 @@ nav {
   display: block;
   width: 100%;
 }
-.nav-dropdown a:hover ~ ul,
+.nav-dropdown:hover > ul,
 .nav-dropdown a:focus-visible ~ ul,
 .nav-dropdown ul:has(a:focus-visible) {
   visibility: visible;
