@@ -15,13 +15,15 @@ export function Navbar() {
           <li className="nav-dropdown">
             <a href="#">SEASONS</a>
             <ul>
-              {Object.entries(kvks).map(([key, _], i) => (
-                <li key={`${i}-${key}`}>
-                  <Link to="/season/$kvk" params={{ kvk: key }}>
-                    {key}
-                  </Link>
-                </li>
-              ))}
+              {Object.entries(kvks)
+                .reverse()
+                .map(([key, _], i) => (
+                  <li key={`${i}-${key}`}>
+                    <Link to="/season/$kvk" params={{ kvk: key }}>
+                      {key}
+                    </Link>
+                  </li>
+                ))}
             </ul>
           </li>
           <li>
