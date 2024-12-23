@@ -5,5 +5,20 @@ export const Route = createLazyFileRoute("/migration")({
 });
 
 function RouteMigration() {
-  return <div>Hello "/migration"!</div>;
+  return (
+    <>
+      <header>
+        <div className="header-content">
+          <h1>MIGRATION PAGE HEADER</h1>
+        </div>
+      </header>
+      <main>
+        <section>
+          <div className="section-content">
+            <h2>MIGRATION PAGE MAIN CONTENT AREA</h2>
+          </div>
+        </section>
+      </main>
+    </>
+  );
 }

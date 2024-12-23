@@ -5,5 +5,20 @@ export const Route = createLazyFileRoute("/information")({
 });
 
 function RouteInformation() {
-  return <div>Hello "/information"!</div>;
+  return (
+    <>
+      <header>
+        <div className="header-content">
+          <h1>INFORMATION PAGE HEADER</h1>
+        </div>
+      </header>
+      <main>
+        <section>
+          <div className="section-content">
+            <h2>INFORMATION PAGE MAIN CONTENT AREA</h2>
+          </div>
+        </section>
+      </main>
+    </>
+  );
 }

@@ -14,7 +14,7 @@ import { createFileRoute } from '@tanstack/react-router'
 
 import { Route as rootRoute } from './routes/__root'
 import { Route as IndexImport } from './routes/index'
-import { Route as KvkKvkImport } from './routes/kvk/$kvk'
+import { Route as SeasonKvkImport } from './routes/season/$kvk'
 
 // Create Virtual Routes
 
@@ -41,9 +41,9 @@ const IndexRoute = IndexImport.update({
   getParentRoute: () => rootRoute,
 } as any)
 
-const KvkKvkRoute = KvkKvkImport.update({
-  id: '/kvk/$kvk',
-  path: '/kvk/$kvk',
+const SeasonKvkRoute = SeasonKvkImport.update({
+  id: '/season/$kvk',
+  path: '/season/$kvk',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -72,11 +72,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof MigrationLazyImport
       parentRoute: typeof rootRoute
     }
-    '/kvk/$kvk': {
-      id: '/kvk/$kvk'
-      path: '/kvk/$kvk'
-      fullPath: '/kvk/$kvk'
-      preLoaderRoute: typeof KvkKvkImport
+    '/season/$kvk': {
+      id: '/season/$kvk'
+      path: '/season/$kvk'
+      fullPath: '/season/$kvk'
+      preLoaderRoute: typeof SeasonKvkImport
       parentRoute: typeof rootRoute
     }
   }
@@ -88,14 +88,14 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/information': typeof InformationLazyRoute
   '/migration': typeof MigrationLazyRoute
-  '/kvk/$kvk': typeof KvkKvkRoute
+  '/season/$kvk': typeof SeasonKvkRoute
 }
 
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/information': typeof InformationLazyRoute
   '/migration': typeof MigrationLazyRoute
-  '/kvk/$kvk': typeof KvkKvkRoute
+  '/season/$kvk': typeof SeasonKvkRoute
 }
 
 export interface FileRoutesById {
@@ -103,15 +103,15 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/information': typeof InformationLazyRoute
   '/migration': typeof MigrationLazyRoute
-  '/kvk/$kvk': typeof KvkKvkRoute
+  '/season/$kvk': typeof SeasonKvkRoute
 }
 
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/information' | '/migration' | '/kvk/$kvk'
+  fullPaths: '/' | '/information' | '/migration' | '/season/$kvk'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/information' | '/migration' | '/kvk/$kvk'
-  id: '__root__' | '/' | '/information' | '/migration' | '/kvk/$kvk'
+  to: '/' | '/information' | '/migration' | '/season/$kvk'
+  id: '__root__' | '/' | '/information' | '/migration' | '/season/$kvk'
   fileRoutesById: FileRoutesById
 }
 
@@ -119,14 +119,14 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   InformationLazyRoute: typeof InformationLazyRoute
   MigrationLazyRoute: typeof MigrationLazyRoute
-  KvkKvkRoute: typeof KvkKvkRoute
+  SeasonKvkRoute: typeof SeasonKvkRoute
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   InformationLazyRoute: InformationLazyRoute,
   MigrationLazyRoute: MigrationLazyRoute,
-  KvkKvkRoute: KvkKvkRoute,
+  SeasonKvkRoute: SeasonKvkRoute,
 }
 
 export const routeTree = rootRoute
@@ -142,7 +142,7 @@ export const routeTree = rootRoute
         "/",
         "/information",
         "/migration",
-        "/kvk/$kvk"
+        "/season/$kvk"
       ]
     },
     "/": {
@@ -154,8 +154,8 @@ export const routeTree = rootRoute
     "/migration": {
       "filePath": "migration.lazy.tsx"
     },
-    "/kvk/$kvk": {
-      "filePath": "kvk/$kvk.tsx"
+    "/season/$kvk": {
+      "filePath": "season/$kvk.tsx"
     }
   }
 }

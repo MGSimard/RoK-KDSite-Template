@@ -1,6 +1,7 @@
-import { createRootRoute, Link, Outlet } from "@tanstack/react-router";
+import { createRootRoute, Outlet } from "@tanstack/react-router";
 import { TanStackRouterDevtools } from "@tanstack/router-devtools";
-import kvks from "../data/kvkdata.json";
+import { Footer } from "../components/Footer";
+import { Navbar } from "../components/Navbar";
 
 export const Route = createRootRoute({
   component: Layout,
@@ -9,18 +10,9 @@ export const Route = createRootRoute({
 function Layout() {
   return (
     <>
-      <nav>
-        <Link to="/">Home</Link>
-        {kvks.map((kvk) => (
-          <Link to="/kvk/$kvk" params={{ kvk: kvk.name }}>
-            {kvk.name}
-          </Link>
-        ))}
-        <Link to="/information">Information</Link>
-        <Link to="/migration">Migration</Link>
-      </nav>
-      <hr />
+      <Navbar />
       <Outlet />
+      <Footer />
       <TanStackRouterDevtools />
     </>
   );

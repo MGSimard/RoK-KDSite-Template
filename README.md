@@ -4,11 +4,14 @@
 - [x] Initial scaffolding of technologies (React, Vite, Router, Latest upgrades, etc.).
 - [x] Initial Push to Github Repo.
 - [x] Create core routes (Home, KVK#, Information, Migration, NotFound).
-- [ ] Home Page
+- [ ] Source fonts
+- [x] Home Page
 - [ ] Information Page
 - [ ] Migration Page
 - [ ] Not Found Page
 - [ ] KVK Page
+- [ ] Nav submenu expansion aria
+- [ ] Nav mobile responsive
 - [ ] Deploy.
 
 </details>
