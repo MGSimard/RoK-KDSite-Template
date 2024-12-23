@@ -7,7 +7,8 @@
 - [x] Source fonts
 - [ ] Add statics for Source Sans 3 (Already have variable)
 - [x] Home Page
-- [ ] Information Page
+- [x] Information Page
+- [ ] Fix json linebreaks \n not working
 - [ ] Migration Page
 - [ ] Not Found Page
 - [ ] KVK Page

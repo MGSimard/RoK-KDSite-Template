@@ -1,8 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Section } from "../../components/Section";
-import { FormLink } from "../../components/FormLink";
-import { KvkTable } from "../../components/KvkTable";
 import kvks from "../../data/kvkdata.json";
+import { IconExternal } from "../../components/Icons";
 
 /* Fetch KVK Data - TODO: Leaf render block, get actual data */
 
@@ -85,5 +84,44 @@ function Error() {
       </header>
       <main></main>
     </>
+  );
+}
+
+function FormLink({ title, link = "#", deadline }: { title: string; link?: string; deadline?: string }) {
+  return (
+    <a href={link} target="_blank">
+      <h3>
+        <span className="withicon">
+          {title}
+          <IconExternal />
+        </span>
+      </h3>
+      <span>00:00:00</span>
+      {deadline && deadline}
+      {/* GREEN TIMER - YELLOW TIMER UNDER 24HRS - RED SUBMISSIONS CLOSED */}
+    </a>
+  );
+}
+
+export function KvkTable() {
+  return (
+    <table className="kvk-table">
+      <thead>
+        <tr>
+          <th>Table head</th>
+          <th>Table head</th>
+          <th>Table head</th>
+          <th>Table head</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Table row</td>
+          <td>Table row</td>
+          <td>Table row</td>
+          <td>Table row</td>
+        </tr>
+      </tbody>
+    </table>
   );
 }
