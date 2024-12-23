@@ -10,7 +10,7 @@ function RouteMigration() {
       <header>
         <div className="header-content">
           <h1>Migration</h1>
-          <hr />
+          <hr className="divider" />
         </div>
       </header>
       <main>

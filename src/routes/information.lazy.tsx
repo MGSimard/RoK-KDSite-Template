@@ -10,7 +10,7 @@ function RouteInformation() {
       <header>
         <div className="header-content">
           <h1>Information</h1>
-          <hr />
+          <hr className="divider" />
         </div>
       </header>
       <main>

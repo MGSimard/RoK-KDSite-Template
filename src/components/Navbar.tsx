@@ -13,8 +13,8 @@ export function Navbar() {
             <Link to="/">HOME</Link>
           </li>
           <li className="nav-dropdown">
-            <a id="nav-submenu01">SEASONS</a>
-            <ul aria-labelledby="nav-submenu01">
+            <a href="#">SEASONS</a>
+            <ul>
               {Object.entries(kvks).map(([key, _], i) => (
                 <li key={`${i}-${key}`}>
                   <Link to="/season/$kvk" params={{ kvk: key }}>
