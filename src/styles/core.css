@@ -8,11 +8,10 @@
 :root[data-theme="light"] {
 } */
 :root {
-  --clrPrimary: hsla(0, 58.8%, 46.7%, 1);
+  --clrPrimary: hsl(0, 58.8%, 46.7%);
   --clrSecondary: #000; /* TODO */
   --clrGhosted: hsl(208, 7%, 46%);
   --clrText: white;
-  --clrSecondary: #000; /* TODO */
   --clrBgDark: hsl(0, 0%, 7%);
   --clrBgLight: hsl(0, 0%, 11%);
   --siteWidth: 1440px;
@@ -160,6 +159,35 @@ section.section-dark {
   gap: 2rem;
   padding: 4rem 0;
 }
+/* CORE - FOOTER */
+
+footer {
+  border-top: 1px solid hsl(from var(--clrBgLight) h s calc(l + 5));
+  background: var(--clrBgLight);
+  letter-spacing: 0.2rem;
+  font-size: 1.2rem;
+}
+body:has(.hero) footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: none;
+  border-top: 1px solid transparent;
+}
+.footer-content {
+  padding: 2rem 0;
+}
+.footer-content span {
+  display: block;
+  filter: drop-shadow(0 0 5px var(--clrBgDark));
+}
+.footer-content a {
+  color: var(--clrPrimary);
+}
+.footer-content a:hover {
+  text-decoration: underline;
+}
 /**/
 /* DEFAULTS */
 h1 {
@@ -226,6 +254,11 @@ button,
 .btn-secondary:focus-visible {
   color: white;
   background: var(--clrGhosted);
+}
+.btn[aria-disabled="true"] {
+  text-decoration: line-through;
+  pointer-events: none;
+  filter: saturate(0) !important;
 }
 ul {
   list-style: none;
@@ -303,7 +336,7 @@ body:has(.hero) {
 }
 /* INFORMATION PAGE */
 .faq-board details:not(:last-child) {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 details {
   padding: 2rem;

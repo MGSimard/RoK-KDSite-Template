@@ -13,7 +13,7 @@ function Layout() {
       <Navbar />
       <Outlet />
       <Footer />
-      <TanStackRouterDevtools />
+      {/* <TanStackRouterDevtools /> */}
     </>
   );
 }
