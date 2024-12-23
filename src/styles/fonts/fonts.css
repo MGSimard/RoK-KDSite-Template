@@ -1,0 +1,94 @@
+/* CINZEL
+Regular: 400
+Medium: 500
+SemiBold: 600
+Bold: 700
+ExtraBold: 800
+Black: 900
+*/
+/* CINZEL VARIABLE */
+@font-face {
+  font-family: "Cinzel Variable";
+  src: url(./cinzel/Cinzel-Variable.ttf) format("truetype");
+  font-weight: 400 500 600 700 800 900;
+  font-style: normal;
+}
+/* CINZEL REGULAR (400) */
+@font-face {
+  font-family: "Cinzel";
+  src:
+    local("Cinzel Regular"),
+    url(./cinzel/Cinzel-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+/* CINZEL MEDIUM (500) */
+@font-face {
+  font-family: "Cinzel";
+  src:
+    local("Cinzel Medium"),
+    url(./cinzel/Cinzel-Medium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+/* CINZEL SEMIBOLD (600) */
+@font-face {
+  font-family: "Cinzel";
+  src:
+    local("Cinzel SemiBold"),
+    url(./cinzel/Cinzel-SemiBold.ttf) format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+/* CINZEL BOLD (700) */
+@font-face {
+  font-family: "Cinzel";
+  src:
+    local("Cinzel Bold"),
+    url(./cinzel/Cinzel-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+/* CINZEL EXTRABOLD (800) */
+@font-face {
+  font-family: "Cinzel";
+  src:
+    local("Cinzel ExtraBold"),
+    url(./cinzel/Cinzel-ExtraBold.ttf) format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+/* CINZEL BLACK (900) */
+@font-face {
+  font-family: "Cinzel";
+  src:
+    local("Cinzel Black"),
+    url(./cinzel/Cinzel-Black.ttf) format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* SOURCE SANS 3
+ExtraLight: 200
+Light: 300
+Regular: 400
+Medium: 500
+SemiBold: 600
+Bold: 700
+ExtraBold: 800
+Black: 900
+*/
+/* SOURCE SANS 3 VARIABLE */
+@font-face {
+  font-family: "Source Sans Variable";
+  src: url(./source-sans/SourceSans3-VariableFont_wght.ttf) format("truetype");
+  font-weight: 200 300 400 500 600 700 800 900;
+  font-style: normal;
+}
+/* SOURCE SANS 3 VARIABLE ITALIC */
+@font-face {
+  font-family: "Source Sans Variable";
+  src: url(./source-sans/SourceSans3-Italic-VariableFont_wght.ttf) format("truetype");
+  font-weight: 200 300 400 500 600 700 800 900;
+  font-style: italic;
+}

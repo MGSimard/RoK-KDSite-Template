@@ -4,7 +4,8 @@
 - [x] Initial scaffolding of technologies (React, Vite, Router, Latest upgrades, etc.).
 - [x] Initial Push to Github Repo.
 - [x] Create core routes (Home, KVK#, Information, Migration, NotFound).
-- [ ] Source fonts
+- [x] Source fonts
+- [ ] Add statics for Source Sans 3 (Already have variable)
 - [x] Home Page
 - [ ] Information Page
 - [ ] Migration Page
