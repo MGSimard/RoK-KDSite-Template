@@ -9,11 +9,11 @@
 - [x] Home Page
 - [x] Information Page
 - [x] Fix json linebreaks \n not working (white-space: pre-wrap)
-- [ ] Migration Page (Add dynamic button rendering depending on options entered)
-- [ ] Implement dynamic link button generation for migration contact options using a json contact file
-- [ ] Not Found Page
-- [ ] KVK Page
+- [x] Migration Page (Add dynamic button rendering depending on options entered)
+- [x] Not Found Page
+- [x] KVK Page
 - [x] Footer design
+- [ ] Error component in root route
 - [ ] Nav submenu expansion aria
 - [ ] Nav mobile responsive
 - [ ] Deploy
