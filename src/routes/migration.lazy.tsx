@@ -15,8 +15,8 @@ function RouteMigration() {
         </div>
         <hr className="divider" />
         <div className="hero-links noselect">
-          {contactOptions.map((option) => (
-            <a href={option.link} target="_blank" className="btn btn-primary">
+          {contactOptions.map((option, i) => (
+            <a key={option.buttonText + i} href={option.link} target="_blank" className="btn btn-primary">
               {option.buttonText}
             </a>
           ))}

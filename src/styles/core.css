@@ -360,7 +360,6 @@ body:has(.hero) {
   display: block;
   width: 100%;
   height: 80rem;
-  border: 1px solid red;
 }
 /* INFORMATION PAGE */
 .faq-board details:not(:last-child) {
