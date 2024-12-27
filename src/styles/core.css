@@ -343,17 +343,24 @@ body:has(.hero) {
 .form-links a:hover,
 .form-links a:focus-visible {
   border-color: var(--clrPrimary);
-  transform: scale(1.01);
-  background: var(--clrPrimary);
 }
 .form-links a p {
   color: var(--clrGhosted);
 }
-.kvk-table {
-  border: 1px solid red;
+.timer-more24 {
+  color: green;
 }
-.kvk-table * {
-  border: 1px solid blue;
+.timer-less24 {
+  color: yellow;
+}
+.timer-closed {
+  color: hsl(0, 58.8%, 46.7%);
+}
+.kvk-data-iframe {
+  display: block;
+  width: 100%;
+  height: 80rem;
+  border: 1px solid red;
 }
 /* INFORMATION PAGE */
 .faq-board details:not(:last-child) {
@@ -375,5 +382,6 @@ details[open] summary {
   color: var(--clrPrimary);
 }
 details p {
+  white-space: pre-wrap;
   padding-top: 1rem;
 }

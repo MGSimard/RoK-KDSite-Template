@@ -1,9 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useState, useEffect } from "react";
 import { Section } from "../../components/Section";
-import kvks from "../../data/kvkdata.json";
 import { IconExternal } from "../../components/Icons";
-
-/* Fetch KVK Data - TODO: Leaf render block, get actual data */
+import kvks from "../../data/kvkdata.json";
 
 export const Route = createFileRoute("/season/$kvk")({
   component: RouteKVK,
@@ -32,24 +31,33 @@ function RouteKVK() {
         </div>
       </header>
       <main>
-        <Section classes="section-light center">
-          <div>
-            <h2>Form Submissions</h2>
-            <p className="flavor">Fill each form at the appropriate time prior to the deadline.</p>
-          </div>
-          <div className="form-links">
-            <FormLink title="Pre-KvK" />
-            <FormLink title="Post-KvK" />
-            <FormLink title="Honor" />
-          </div>
-        </Section>
+        {/* RENDER FORM LINKS FROM KVKDATA.JSON */}
+        {kvkData.forms.length > 0 && (
+          <Section classes="section-light center">
+            <div>
+              <h2>Form Submissions</h2>
+              <p className="flavor">Fill each form at the appropriate time prior to the deadline.</p>
+            </div>
+            <div className="form-links">
+              {kvkData.forms.map((form) => (
+                <FormLink formData={form} key={form.formTitle} />
+              ))}
+            </div>
+          </Section>
+        )}
+        {/* RENDER PLAYER STATISTICS DATA FROM KVKDATA.JSON */}
         <Section classes="center">
           <div>
             <h2>Rankings</h2>
             <p className="flavor">List of top KVK contributors.</p>
             <hr className="divider" />
+            {kvkData.dataUrl ? (
+              // TAKES IN ANY IFRAME LINK; GOOGLE SHEETS, LOOKER STUDIO ETC.
+              <iframe className="kvk-data-iframe" src={kvkData.dataUrl}></iframe>
+            ) : (
+              <p className="flavor">Not available at this time.</p>
+            )}
           </div>
-          <KvkTable />
         </Section>
       </main>
     </>
@@ -87,41 +95,50 @@ function Error() {
   );
 }
 
-function FormLink({ title, link = "#", deadline }: { title: string; link?: string; deadline?: string }) {
+function FormLink({ formData }: { formData: { formTitle: string; deadlineUnix: number; formLink: string } }) {
+  const { formTitle, deadlineUnix, formLink } = formData;
+
   return (
-    <a href={link} target="_blank">
+    <a href={formLink} target="_blank">
       <h3>
         <span className="withicon">
-          {title}
+          {formTitle}
           <IconExternal />
         </span>
       </h3>
-      <span>00:00:00</span>
-      {deadline && deadline}
+      <FormTimer deadlineUnix={deadlineUnix} />
       {/* GREEN TIMER - YELLOW TIMER UNDER 24HRS - RED SUBMISSIONS CLOSED */}
     </a>
   );
 }
+function FormTimer({ deadlineUnix }: { deadlineUnix: number }) {
+  // IF NO DEADLINE PROVIDED RETURN NOT YET STARTED
+  if (!deadlineUnix) return <span className="flavor">NOT YET STARTED.</span>;
+  // IF DEADLINE IS PAST, RETURN SUBMISSIONS CLOSED
+  const currentUnix = Math.floor(Date.now() / 1000);
+  if (currentUnix > deadlineUnix) return <span className="timer-closed">SUBMISSIONS CLOSED</span>;
 
-export function KvkTable() {
+  const [timeLeft, setTimeLeft] = useState(deadlineUnix - currentUnix);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTimeLeft(deadlineUnix - Math.floor(Date.now() / 1000));
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, [deadlineUnix]);
+
+  const days = Math.floor(timeLeft / (60 * 60 * 24));
+  const hours = Math.floor((timeLeft % (60 * 60 * 24)) / (60 * 60));
+  const minutes = Math.floor((timeLeft % (60 * 60)) / 60);
+  const seconds = timeLeft % 60;
+
   return (
-    <table className="kvk-table">
-      <thead>
-        <tr>
-          <th>Table head</th>
-          <th>Table head</th>
-          <th>Table head</th>
-          <th>Table head</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Table row</td>
-          <td>Table row</td>
-          <td>Table row</td>
-          <td>Table row</td>
-        </tr>
-      </tbody>
-    </table>
+    <span className={timeLeft > 86400 ? "timer-more24" : "timer-less24"}>
+      {days ? days + "d " : ""}
+      {hours ? hours + "h " : ""}
+      {minutes ? minutes + "m " : ""}
+      {seconds ? seconds + "s" : ""}
+    </span>
   );
 }

@@ -1,6 +1,6 @@
 import { createLazyFileRoute } from "@tanstack/react-router";
-import faq from "../data/faq.json";
 import { Section } from "../components/Section";
+import faq from "../data/faq.json";
 
 export const Route = createLazyFileRoute("/information")({
   component: RouteInformation,
@@ -30,6 +30,7 @@ function RouteInformation() {
         </div>
       </header>
       <main>
+        {/* RENDER FAQ FROM FAQ.JSON */}
         <Section classes="section-dark">
           <div className="faq-board" onClick={handleAccordion}>
             {faq.map((entry) => (

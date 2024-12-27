@@ -1,5 +1,5 @@
 import { createLazyFileRoute } from "@tanstack/react-router";
-import { Section } from "../components/Section";
+import contactOptions from "../data/contacts.json";
 
 export const Route = createLazyFileRoute("/migration")({
   component: RouteMigration,
@@ -8,16 +8,19 @@ export const Route = createLazyFileRoute("/migration")({
 function RouteMigration() {
   return (
     <>
-      <header>
-        <div className="header-content">
+      <main className="hero">
+        <div>
           <h1>Migration</h1>
-          <hr className="divider" />
+          <p>Join the #1 Kingdom in Rise of Kingdoms</p>
         </div>
-      </header>
-      <main>
-        <Section>
-          <h2>Migration page main content area.</h2>
-        </Section>
+        <hr className="divider" />
+        <div className="hero-links noselect">
+          {contactOptions.map((option) => (
+            <a href={option.link} target="_blank" className="btn btn-primary">
+              {option.buttonText}
+            </a>
+          ))}
+        </div>
       </main>
     </>
   );

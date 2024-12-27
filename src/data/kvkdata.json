@@ -1,6 +1,38 @@
 {
-  "kvk4": { "title": "Season of Conquest", "dataUrl": "", "formPrekvk": "", "formPostkvk": "", "formHonor": "" },
-  "kvk3": { "title": "Season Three", "dataUrl": "", "formPrekvk": "", "formPostkvk": "", "formHonor": "" },
-  "kvk2": { "title": "Season Two", "dataUrl": "", "formPrekvk": "", "formPostkvk": "", "formHonor": "" },
-  "kvk1": { "title": "Season one", "dataUrl": "", "formPrekvk": "", "formPostkvk": "", "formHonor": "" }
+  "kvk4": {
+    "title": "Season of Conquest",
+    "dataUrl": "",
+    "forms": [
+      { "formTitle": "Form One", "deadlineUnix": 1735015263, "formLink": "" },
+      { "formTitle": "Form Two", "deadlineUnix": 1735304263, "formLink": "" },
+      { "formTitle": "Form Three", "deadlineUnix": 1756215263, "formLink": "" }
+    ]
+  },
+  "kvk3": {
+    "title": "Season Three",
+    "dataUrl": "https://docs.google.com/spreadsheets/d/e/2PACX-1vS5ei10_bfED5qSMqh02fDzBC6pDnxjFmISenGBndDHJKtmf_ULCfbsWb3ncmOyazQ6Y5I75lUJOW_X/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false",
+    "forms": [
+      { "formTitle": "Form One", "deadlineUnix": 1, "formLink": "" },
+      { "formTitle": "Form Two", "deadlineUnix": 1, "formLink": "" },
+      { "formTitle": "Form Three", "deadlineUnix": 1, "formLink": "" }
+    ]
+  },
+  "kvk2": {
+    "title": "Season Two",
+    "dataUrl": "",
+    "forms": [
+      { "formTitle": "Form One", "deadlineUnix": 1, "formLink": "" },
+      { "formTitle": "Form Two", "deadlineUnix": 1, "formLink": "" },
+      { "formTitle": "Form Three", "deadlineUnix": 1, "formLink": "" }
+    ]
+  },
+  "kvk1": {
+    "title": "Season one",
+    "dataUrl": "",
+    "forms": [
+      { "formTitle": "Form One", "deadlineUnix": 1, "formLink": "" },
+      { "formTitle": "Form Two", "deadlineUnix": 1, "formLink": "" },
+      { "formTitle": "Form Three", "deadlineUnix": 1, "formLink": "" }
+    ]
+  }
 }
