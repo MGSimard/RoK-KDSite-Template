@@ -63,6 +63,16 @@ Lighweight React/Vite Template for Rise of Kingdoms Websites.
 
 </details>
 
+<details><summary><h2>Editing: Website identity.</h2></summary>
+<p>Instructions on editing website logo text and title.</p>
+
+1. index.html
+2. Change the various metadata text contents to your liking.
+3. src > components > Navbar.tsx.
+4. Change "KD0000" to your own kingdom number.
+
+</details>
+
 <details><summary><h2>Editing: Home</h2></summary>
 <p>Instructions on editing landing page.</p>
 
@@ -104,16 +114,6 @@ Lighweight React/Vite Template for Rise of Kingdoms Websites.
 1. src > styles > core.css.
 2. Look for color variables in :root at the top of the file.
 3. Simply edit the color values - preferably in the same format as default (hsl).
-
-</details>
-
-<details><summary><h2>Editing: Website "logo" & title.</h2></summary>
-<p>Instructions on editing website logo text and title.</p>
-
-1. src > components > Navbar.tsx.
-2. Change "KD0000" to your own kingdom number.
-3. index.html
-4. Change "KD0000" to your own kingdom number.
 
 </details>
 
