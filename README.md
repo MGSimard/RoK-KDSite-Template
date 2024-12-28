@@ -61,6 +61,8 @@ Lighweight React/Vite Template for Rise of Kingdoms Websites.
 3. pnpm run dev.
 4. Navigate to localhost:3000 to preview.
 
+<p>Note: If choosing to deploy elsewhere than Firebase, just delete everything Firebase related from the project.</p>
+
 </details>
 
 <details><summary><h2>Editing: Website identity.</h2></summary>
