@@ -35,7 +35,7 @@ Lighweight React/Vite Template for Rise of Kingdoms Websites.
 
 ## About The Project
 
-![Screenshot]()
+![Screenshot](https://i.imgur.com/VFTG339.png)
 
 ### Features
 
