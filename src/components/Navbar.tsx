@@ -7,7 +7,6 @@ export function Navbar() {
       <div className="nav-content">
         <Link to="/">
           <span className="logo-as-text">KD0000</span>
-          {/* <img alt="Logo" /> */}
         </Link>
         <ul className="nav-links">
           <li>
@@ -16,8 +15,7 @@ export function Navbar() {
             </Link>
           </li>
           <li className="nav-dropdown">
-            {/* TODO: ARIA EXPAND CONTROL */}
-            <span className="nav-link" tabIndex={0}>
+            <span className="nav-link" tabIndex={0} aria-haspopup="true">
               SEASONS
             </span>
             <ul>
