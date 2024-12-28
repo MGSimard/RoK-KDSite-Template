@@ -52,7 +52,7 @@ Lighweight React/Vite Template.
 
 ## Usage
 
-<details><summary><h2>Usage: Installation</h2><summary>
+<details><summary><h2>Usage: Installation</h2></summary>
 <p>Instructions on setting up development.</p>
 
 1. Open in IDE.
