@@ -14,7 +14,7 @@
 - [x] KVK Page
 - [x] Footer design
 - [ ] Error component in root route
-- [ ] Nav background on scroll
+- [x] Nav background on scroll
 - [x] Nav mobile responsive
 - [ ] Meta
 - [ ] Deploy

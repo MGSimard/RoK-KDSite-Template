@@ -14,10 +14,8 @@ export function Navbar() {
       }
     };
 
-    // Add event listener with passive option for better performance
     window.addEventListener("scroll", handleScroll, { passive: true });
 
-    // Cleanup
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
