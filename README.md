@@ -106,6 +106,16 @@ Lighweight React/Vite Template for Rise of Kingdoms Websites.
 
 </details>
 
+<details><summary><h2>Editing: Website "logo" & title.</h2></summary>
+<p>Instructions on editing website logo text and title.</p>
+
+1. src > components > Navbar.tsx.
+2. Change "KD0000" to your own kingdom number.
+3. index.html
+4. Change "KD0000" to your own kingdom number.
+
+</details>
+
 ## Contact
 
 MGSimard - g.marcgs@gmail.com  

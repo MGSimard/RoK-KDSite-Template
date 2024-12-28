@@ -6,7 +6,7 @@ export function Navbar() {
     <nav className="noselect">
       <div className="nav-content">
         <Link to="/">
-          <span className="logo-as-text">KD3135</span>
+          <span className="logo-as-text">KD0000</span>
           {/* <img alt="Logo" /> */}
         </Link>
         <ul className="nav-links">

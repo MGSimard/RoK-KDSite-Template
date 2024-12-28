@@ -97,6 +97,7 @@ nav {
 .logo-as-text {
   font-family: "Cinzel Variable", "Cinzel", serif;
   font-weight: 700;
+  transition: color 0.2s ease;
 }
 .logo-as-text:hover {
   color: var(--clrPrimary);
