@@ -25,7 +25,7 @@
 
 <h3 align="center">Rise of Kingdoms - Kingdom Site Template</h3>
 <p align="center">
-Lighweight React/Vite Template.
+Lighweight React/Vite Template for Rise of Kingdoms Websites.
 <br/>
 <br/>
 <a href="#">View Live Project</a>
@@ -38,10 +38,10 @@ Lighweight React/Vite Template.
 
 ### Features
 
-- Feature 1
-- Feature 2
-- Feature 3
-- Feature 4
+- Landing hero page.
+- Automatic KVK page generation according to data input.
+- Information page for FAQ.
+- Migration page for thirdparty site linking.
 
 ### Built With
 
@@ -52,7 +52,7 @@ Lighweight React/Vite Template.
 
 ## Usage
 
-<details><summary><h2>Usage: Installation</h2></summary>
+<details><summary><h2>Installation</h2></summary>
 <p>Instructions on setting up development.</p>
 
 1. Open in IDE.
@@ -94,6 +94,15 @@ Lighweight React/Vite Template.
 1. src > data > contacts.json.
 2. Add, modify or delete button blocks.
 3. I.E. [{ "buttonText": "DISCORD", "link": "linkhere" }, [{ "buttonText": "FACEBOOK", "link": "linkhere" }]]
+
+</details>
+
+<details><summary><h2>Editing: Website color palette</h2></summary>
+<p>Instructions on editing website color palette.</p>
+
+1. src > styles > core.css.
+2. Look for color variables in :root at the top of the file.
+3. Simply edit the color values - preferably in the same format as default (hsl).
 
 </details>
 

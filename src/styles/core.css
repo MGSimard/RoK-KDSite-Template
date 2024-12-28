@@ -94,6 +94,13 @@ nav {
   align-items: center;
   height: var(--navHeight);
 }
+.logo-as-text {
+  font-family: "Cinzel Variable", "Cinzel", serif;
+  font-weight: 700;
+}
+.logo-as-text:hover {
+  color: var(--clrPrimary);
+}
 .nav-links {
   display: flex;
   align-items: center;
