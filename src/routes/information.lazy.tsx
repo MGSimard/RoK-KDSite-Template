@@ -34,7 +34,7 @@ function RouteInformation() {
         <Section classes="section-dark">
           <div className="faq-board" onClick={handleAccordion}>
             {faq.map((entry) => (
-              <details>
+              <details key={entry.q}>
                 <summary className="noselect">{entry.q}</summary>
                 <p>{entry.a}</p>
               </details>
