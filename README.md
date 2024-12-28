@@ -29,7 +29,7 @@
 Lighweight React/Vite Template for Rise of Kingdoms Websites.
 <br/>
 <br/>
-<a href="#">View Live Project</a>
+<a href="https://rok-kdsite.web.app/" target="_blank">View Live Project</a>
 </p>
 </div>
 
