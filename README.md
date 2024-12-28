@@ -43,29 +43,6 @@ Lighweight React/Vite Template.
 - Feature 3
 - Feature 4
 
-<details>
-<summary><h2>Application Flow: Section 1</h2></summary>
-<p>Application Flow Description.</p>
-
-1. Item 1.
-2. Item 2.
-3. Item 3.
-
-</details>
-
-<details>
-<summary><h2>Application Flow: Section 2</h2></summary>
-<p>Application Flow Description.</p>
-
-1. Item 1.
-2. Item 2.
-3. Item 3.
-   - Subitem 3.1.
-   - Subitem 3.2.
-   - Subitem 3.3.
-
-</details>
-
 ### Built With
 
 - [React 19.0.0](https://react.dev/)
@@ -75,9 +52,50 @@ Lighweight React/Vite Template.
 
 ## Usage
 
-<details><summary><h2>Usage: Installation</h2><summary></details>
-<details><summary><h2>Usage: Modification</h2><summary></details>
-<details><summary><h2>Usage: Deployment</h2><summary></details>
+<details><summary><h2>Usage: Installation</h2><summary>
+<p>Instructions on setting up development.</p>
+
+1. Open in IDE.
+2. pnpm install.
+3. pnpm run dev.
+4. Navigate to localhost:3000 to preview.
+
+</details>
+
+<details><summary><h2>Editing: Home</h2></summary>
+<p>Instructions on editing landing page.</p>
+
+1. src > routes > index.tsx
+2. Edit kingdom name text & tagline.
+
+</details>
+
+<details><summary><h2>Editing: Seasons</h2></summary>
+<p>Instructions on editing Seasons page.</p>
+
+1. src > data > kvkdata.json.
+2. Add, modify or delete kvk blocks - earliest at the top.
+3. Add iframe URL to "dataUrl" - like Google Sheets or Looker Studio.
+4. Add form links if used (as many as you need) - otherwise leave as "forms": [] to avoid rendering the forms section.
+
+</details>
+
+<details><summary><h2>Editing: Information</h2></summary>
+<p>Instructions on editing Information page.</p>
+
+1. src > data > faq.json.
+2. Add, modify or delete Q&A blocks.
+
+</details>
+
+<details><summary><h2>Editing: Migration</h2></summary>
+<p>Instructions on editing Information page.</p>
+
+1. src > data > contacts.json.
+2. Add, modify or delete button blocks.
+3. I.E. [{ "buttonText": "DISCORD", "link": "linkhere" }, [{ "buttonText": "FACEBOOK", "link": "linkhere" }]]
+
+</details>
 
 ## Contact
 
