@@ -53,15 +53,17 @@ Lighweight React/Vite Template for Rise of Kingdoms Websites.
 
 ## Usage
 
-<details><summary><h2>Installation</h2></summary>
+<details><summary><h2>Installation & Deployment</h2></summary>
 <p>Instructions on setting up development.</p>
 
-1. Open in IDE.
-2. pnpm install.
-3. pnpm run dev.
-4. Navigate to localhost:3000 to preview.
+1. Open in IDE
+2. Install pnpm.
+3. Run command: pnpm install.
+4. Run command: pnpm run dev.
+5. Navigate to localhost:3000 to preview in browser.
+6. If not using automated deployment/build pipeline, run command: pnpm run build.
 
-<p>Note: If choosing to deploy elsewhere than Firebase, just delete everything Firebase related from the project.</p>
+<p>Note: This template's preview runs off of Firebase - "pnpm uninstall firebase" if not using. If you do want to use Firebase, create an app there then follow the hosting installation instructions - alternatively view this video: https://www.youtube.com/watch?v=uWA6gCJiOoQ.</p>
 
 </details>
 
