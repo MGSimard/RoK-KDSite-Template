@@ -87,6 +87,11 @@ nav {
   right: 0;
   text-transform: uppercase;
   z-index: 999;
+  transition: background-color ease 0.2s;
+}
+nav.sticky {
+  background-color: var(--clrBgLight);
+  box-shadow: 0 0 1rem black;
 }
 .nav-content {
   display: flex;
@@ -98,6 +103,7 @@ nav {
   font-family: "Cinzel Variable", "Cinzel", serif;
   font-weight: 700;
   transition: color 0.2s ease;
+  font-size: 2rem;
 }
 .logo-as-text:hover {
   color: var(--clrPrimary);
@@ -156,18 +162,6 @@ nav {
 .nav-dropdown ul:has(.nav-link:focus-visible) {
   visibility: visible;
   opacity: 1;
-}
-.burger-toggle {
-  display: none;
-  color: var(--clrText);
-  background: none;
-  height: 100%;
-  aspect-ratio: 1/1;
-}
-button.burger-toggle {
-  padding: 0;
-}
-.burger-toggle svg {
 }
 /* CORE - SECTION */
 section.section-light {
@@ -412,20 +406,21 @@ details p {
 
 @media only screen and (max-width: 960px) {
   h1 {
-    font-size: 15vw;
+    font-size: 10vw;
   }
   .nav-content {
     position: relative;
   }
   .nav-content > a {
     position: absolute;
-    top: calc(100% - 2rem);
+    top: 1rem;
+    left: 0;
     pointer-events: none;
     z-index: -1;
   }
   .logo-as-text {
-    font-size: 5rem;
-    opacity: 0.1;
+    font-size: 2rem;
+    opacity: 0.3;
   }
   .nav-content {
     justify-content: center;

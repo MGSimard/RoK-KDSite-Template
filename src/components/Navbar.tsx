@@ -1,9 +1,28 @@
 import { Link } from "@tanstack/react-router";
+import { useState, useEffect } from "react";
 import kvks from "../data/kvkdata.json";
 
 export function Navbar() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    // Add event listener with passive option for better performance
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    // Cleanup
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="noselect">
+    <nav className={`noselect${isScrolled ? " sticky" : ""}`}>
       <div className="nav-content">
         <Link to="/">
           <span className="logo-as-text">KD0000</span>
