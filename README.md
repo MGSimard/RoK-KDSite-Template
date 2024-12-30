@@ -18,7 +18,7 @@
 - [x] Nav mobile responsive
 - [x] Meta
 - [ ] Fix navbar mobile focus keeping the dropdown open on page change
-- [ ] Deploy
+- [x] Deploy
 
 </details>
 
