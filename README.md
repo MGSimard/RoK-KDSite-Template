@@ -16,7 +16,7 @@
 - [ ] Error component in root route
 - [x] Nav background on scroll
 - [x] Nav mobile responsive
-- [ ] Meta
+- [x] Meta
 - [ ] Fix navbar mobile focus keeping the dropdown open on page change
 - [ ] Deploy
 
