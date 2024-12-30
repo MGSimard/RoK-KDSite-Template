@@ -17,6 +17,7 @@
 - [x] Nav background on scroll
 - [x] Nav mobile responsive
 - [ ] Meta
+- [ ] Fix navbar mobile focus keeping the dropdown open on page change
 - [ ] Deploy
 
 </details>
