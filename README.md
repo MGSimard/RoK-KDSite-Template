@@ -13,7 +13,7 @@
 - [x] Not Found Page
 - [x] KVK Page
 - [x] Footer design
-- [ ] Error component in root route
+- [x] Error component in root route
 - [x] Nav background on scroll
 - [x] Nav mobile responsive
 - [x] Meta
