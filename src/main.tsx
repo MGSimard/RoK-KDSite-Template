@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { RouterProvider, createRouter } from "@tanstack/react-router";
 import { NotFound } from "./components/NotFound";
 import { routeTree } from "./routeTree.gen";
+import { Error } from "./components/Error";
 import "./styles/core.css";
 import "./styles/fonts/fonts.css";
 
@@ -10,6 +11,7 @@ import "./styles/fonts/fonts.css";
 const router = createRouter({
   routeTree,
   defaultNotFoundComponent: NotFound,
+  defaultErrorComponent: Error,
 });
 
 // Register the router instance for type safety

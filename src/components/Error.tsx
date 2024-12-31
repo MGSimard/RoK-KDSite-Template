@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 
-export function NotFound() {
+export function Error({ error }: { error: Error }) {
+  console.error(error);
   return (
     <main className="not-found">
       <h1>Error</h1>
