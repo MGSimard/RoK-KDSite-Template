@@ -7,7 +7,6 @@ export const Route = createFileRoute("/")({
 
 function RouteHome() {
   const kvkList = Object.keys(kvks);
-  throw new Error("This is a forced error for testing purposes");
 
   return (
     <>
