@@ -100,31 +100,9 @@ Lighweight React/Vite Template for Rise of Kingdoms Websites.
 
 ## Contact
 
-MGSimard - g.marcgs@gmail.com  
-[@MGSimard on X](https://x.com/MGSimard)
+MGSimard  
+X: [@MGSimard](https://x.com/MGSimard)  
+GitHub: [@MGSimard](https://github.com/MGSimard)  
+Mail: [mgsimard.dev@gmail.com](mailto:mgsimard.dev@gmail.com)
 
-For more info, view my portfolio at [mgsimard.github.io](https://mgsimard.github.io). Resume attached.
-
-<details>
-<summary><h2>Task List</h2></summary>
-
-- [x] Initial scaffolding of technologies (React, Vite, Router, Latest upgrades, etc.)
-- [x] Initial Push to Github Repo
-- [x] Create core routes (Home, KVK#, Information, Migration, NotFound)
-- [x] Source fonts
-- [ ] Add statics for Source Sans 3 (Already have variable)
-- [x] Home Page
-- [x] Information Page
-- [x] Fix json linebreaks \n not working (white-space: pre-wrap)
-- [x] Migration Page (Add dynamic button rendering depending on options entered)
-- [x] Not Found Page
-- [x] KVK Page
-- [x] Footer design
-- [x] Error component in root route
-- [x] Nav background on scroll
-- [x] Nav mobile responsive
-- [x] Meta
-- [ ] Fix navbar mobile focus keeping the dropdown open on page change
-- [x] Deploy
-
-</details>
+For more info, view my portfolio at [mgsimard.dev](https://mgsimard.dev).
